@@ -8,17 +8,19 @@ const DisplayItems = () => {
     const dispatch = useDispatch();
   return (
       <div className='container wrapper'>
-             
+              <h1>Popular Now</h1>
           <div className="itemContainer scrollbar" id="style-4">
-              
+             
               {
                   ProductData.map((item, index) => {
                       return (
                         <div className="itemBox" key={index}>
-                        <img src="https://i.dummyjson.com/data/products/1/thumbnail.jpg" alt="" />
-                        <h2>Iphone</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, voluptatem laboriosam. Quaerat nulla odit, eaque nam nisi error molestiae voluptate.</p>
-                        <h3>12000</h3>
+                        <img src={item.thumbnail} alt="" />
+                              <h2>{ item.title}</h2>
+                              <p>{item.description}</p>
+                              <h4>{item.category }</h4>
+                              <h3>$ {item.price}</h3>
+                              
                         <button onClick={()=>{dispatch(addToCart())}}>Add To Cart</button>
                     </div>
                       )
