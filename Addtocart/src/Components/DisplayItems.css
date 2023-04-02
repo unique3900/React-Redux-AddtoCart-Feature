@@ -1,0 +1,42 @@
+.container{
+    height: 100%;
+    width: 100%;
+    background-color: rgb(188, 255, 255);
+    padding: 70px 50px;
+}
+.itemContainer{
+overflow: hidden;
+background-color: white;
+padding: 50px;
+height: 100vh;
+box-shadow: 0px 0px 40px 0px black;
+}
+.itemBox{
+    padding: 20px;
+    border: 2px solid black;
+    box-shadow: 0px 0px 20px 0px black;
+    width: 25rem;
+}
+.itemBox>img{
+    position: relative;
+    width: 22rem;
+}
+.itemBox>h1{
+    font-size: 24px;
+}
+.itemBox>p{
+    color: gray;
+    padding: 5px;
+}
+.itemBox>h3{
+    font-size: 20px;
+    font-style: italic;
+    margin:0 5px;
+}
+.itemBox>button{
+    margin-top: 5px;
+    background-color: rgb(34, 141, 34);
+    color: white;
+    padding: 5px 5px;
+    cursor: pointer;
+}
